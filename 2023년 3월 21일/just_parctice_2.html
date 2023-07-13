@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+  <title>Understanding Form</title>
+</head>
+<html>
+  <body>
+    <form action="a1.asp" name="form1" method="get">
+      <p>input your name</p>
+      <input type="text" name="t1" value="name" />
+      <input type="button" value="result" , onClick="p(this.form)" />
+    </form>
+    <script language="JavaScript">
+      function p(obj) {
+        if (!obj.t1.value) {
+          alert("Please enter your name.");
+        } else {
+          document.write("Form name: " + obj.t1.value);
+        }
+      }
+    </script>
+  </body>
+</html>

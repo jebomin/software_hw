@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    소프트웨어공학및설계(INC4039-01) 2020112084 제보민<br>
+    <title>User-defined objects</title>
+      <script type="text/javascript">
+      // Define a function which will work as a method
+        function addPrice(amount){
+          this.price = amount; 
+        }
+        function book(title, author){
+          this.title = title;
+          this.author = author;
+          this.addPrice = addPrice; // Assign that method as property.
+        }
+      </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+    var myBook = new book("회색인간", "김동식");
+    myBook.addPrice(100);
+    document.write("Book title is : " + myBook.title + "<br>");
+    document.write("Book author is : " + myBook.author + "<br>");
+    document.write("Book price is : " + myBook.price + "<br>");
+    </script>
+  </body>
+</html>

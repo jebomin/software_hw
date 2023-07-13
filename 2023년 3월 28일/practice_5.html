@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    소프트웨어공학및설계(INC4039-01) 2020112084 제보민
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("p").on({
+          mouseenter: function () {
+            $(this).css("background-color", "lightgray");
+          },
+          mouseleave: function () {
+            $(this).css("background-color", "lightblue");
+          },
+          click: function () {
+            $(this).css("background-color", "yellow");
+          },
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p>Click or move the mouse pointer over this paragraph.</p>
+  </body>
+</html>
