@@ -1,2 +1,2 @@
-# software_hw
- 소프트웨어 공학 및 설계 수업 과제
+# 📖 software_hw
+html, css, javascript, jquery, python, flask 과제 모음
